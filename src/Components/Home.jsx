@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import { FaShopify } from "react-icons/fa";
 const Home = () => {
   return (
     <section>
@@ -14,7 +14,7 @@ const Home = () => {
           className="primary-btn position-img-button"
           to="/products"
         >
-          Shop Now
+         < FaShopify/>
         </Link>
       </div>
     </section>
