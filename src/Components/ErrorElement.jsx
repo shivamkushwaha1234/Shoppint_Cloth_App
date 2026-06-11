@@ -1,15 +1,18 @@
 import { useRouteError, NavLink } from "react-router-dom";
-//import "./ErrorElement.css";
 
 const ErrorElement = () => {
   const err = useRouteError();
-  console.log(err);
 
   return (
     <div className="error-container">
       <div className="error-card">
-        <h1>Oops!</h1>
-        <h2>Something went wrong</h2>
+        <h1>{err?.status || "404"}</h1>
+
+        <h2>
+          {err?.status === 404
+            ? "Page Not Found"
+            : "Something Went Wrong"}
+        </h2>
 
         <p className="error-message">
           {err?.statusText || err?.message || "Unexpected Error"}
