@@ -172,18 +172,28 @@
     font-size: 1rem;
   }
   
-  .home-btn {
-    display: inline-block;
-    padding: 12px 24px;
+  .primary-btn {
+    
+    cursor: pointer;
+    padding: 5px 8px;
+    border:none;
     background: var(--primary-color);
     color: white;
     text-decoration: none;
-    border-radius: 8px;
-    font-weight: 600;
-    transition: 0.3s;
+    border-radius: 3px;
+    font-weight: 100;
+    font-size: x-large;
   }
   
-  .home-btn:hover {
+  .primary-btn:hover {
     background: var(--primary-light);
-    transform: translateY(-2px);
+    
   }
+  .img-home{
+    width: 80%;
+    margin-left:10%;
+    margin-right: 10%;
+    height: 400px;
+    object-fit: cover;
+  }
+  
