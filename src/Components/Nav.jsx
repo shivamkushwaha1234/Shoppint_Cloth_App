@@ -6,17 +6,17 @@ const Nav = () => {
       <h1 className="navbar__logo">Cloth Shop</h1>
 
       <nav className="navbar__links">
-        <a className="navbar__link" to="/products">
+        <NavLink className="navbar__link" to="/products">
           Products
-        </a>
+        </NavLink>
 
-        <a className="navbar__link" to="/cart">
+        <NavLink className="navbar__link" to="/cart">
           Cart
-        </a>
+        </NavLink>
 
-        <a className="navbar__link" to="/profile">
+        <NavLink className="navbar__link" to="/profile">
           Profile
-        </a>
+        </NavLink>
       </nav>
     </header>
   );
