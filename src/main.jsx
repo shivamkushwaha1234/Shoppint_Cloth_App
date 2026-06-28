@@ -23,6 +23,9 @@ children:[
 },{
   path:"/profile",
   element:<Profile/>
+},{
+  path:"/products/:categoryName",
+  element:<Products/>
 }]
 }]);
 createRoot(document.getElementById('root')).render(

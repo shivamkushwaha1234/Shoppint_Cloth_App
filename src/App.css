@@ -241,3 +241,32 @@
     left: 15%;
     transform: translate(-50%, -50%);
   }
+  .category-head{
+    text-align: center;
+  }
+  .categories-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+  }
+  .category-image{
+    width: 250px;
+    margin: auto;
+    height: 300px;
+
+    cursor: pointer;
+    gap: 0.5rem;
+    margin-top: 0.5px;
+  }
+  .category-image img{
+    object-fit: cover;
+    width: 250px;
+    height: 300px;
+  }
+  
+  .category-image:hover{
+    height: 300px;
+    object-fit: cover;
+    width: 250px;
+  }
